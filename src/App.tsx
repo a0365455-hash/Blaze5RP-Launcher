@@ -48,7 +48,7 @@ export default function App() {
   return <div className="launcher">
     <aside className="sidebar">
       <button className="brand" onClick={goHome} aria-label="Blaze5RP — главная">
-        <span className="brand-symbol"><i/><b>B</b></span>
+        <span className="brand-symbol"><span className="brand-star-inner"/><b>B</b></span>
         <span className="brand-word">BLAZE<span>5</span>RP<small>ROLEPLAY LAUNCHER</small></span>
       </button>
       <nav className="side-nav">
