@@ -67,8 +67,8 @@ export default function App() {
         <div className="topbar-left"><span className="live-indicator"/>Сейчас играет: <b>—</b></div>
         <div className="topbar-right">
           <button className="top-icon" onClick={() => setPage('settings')} aria-label="Настройки"><Settings/></button>
-          <button className="window-control" onClick={() => setNotice('Управление окном доступно через системные кнопки.')}>—</button>
-          <button className="window-control close-control" onClick={() => setNotice('Закройте лаунчер обычным способом.')}>×</button>
+          <button className="window-control" onClick={() => window.blaze.minimizeWindow()} aria-label="Свернуть">—</button>
+          <button className="window-control close-control" onClick={() => window.blaze.closeWindow()} aria-label="Закрыть">×</button>
         </div>
       </header>
 
