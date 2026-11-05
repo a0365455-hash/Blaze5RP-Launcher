@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Russo+One&display=swap');
-:root{font-family:Montserrat,Arial,sans-serif;color:#e9e9e9;background:#191919;font-synthesis:none;text-rendering:optimizeLegibility}
+:root{font-family:Montserrat,Arial,sans-serif;color:#e9e9e9;background:#1d1d1d;font-synthesis:none;text-rendering:optimizeLegibility}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;min-width:900px;min-height:100vh;background:#191919}
+body{margin:0;min-width:900px;min-height:100vh;background:#1d1d1d}
 button{font:inherit}
-.launcher{min-height:100vh;display:flex;background:#191919}
+.launcher{min-height:100vh;display:flex;background:#1d1d1d}
 .sidebar{width:197px;flex:0 0 197px;background:#202020;border-right:1px solid #303030;display:flex;flex-direction:column;min-height:100vh}
 .brand{height:104px;border:0;border-bottom:1px solid #303030;background:#202020;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
-.brand-symbol{position:relative;width:42px;height:45px;display:grid;place-items:center;clip-path:polygon(50% 0,100% 25%,87% 82%,50% 100%,13% 82%,0 25%);background:linear-gradient(145deg,#ff9a24,#e65a19);color:#222}
-.brand-symbol i{position:absolute;width:31px;height:31px;border:2px solid #202020;transform:rotate(45deg)}
-.brand-symbol b{font:20px 'Russo One';z-index:1}
+.brand-symbol{position:relative;width:46px;height:46px;display:grid;place-items:center;clip-path:polygon(50% 0%,61% 34%,98% 35%,68% 57%,79% 94%,50% 72%,21% 94%,32% 57%,2% 35%,39% 34%);background:linear-gradient(145deg,#ffd18b 0%,#ff7629 38%,#b83b13 100%);color:#202020;filter:drop-shadow(0 2px 5px #0009)}
+.brand-star-inner{position:absolute;inset:5px;background:linear-gradient(145deg,#303030,#171717);clip-path:polygon(50% 0%,61% 34%,98% 35%,68% 57%,79% 94%,50% 72%,21% 94%,32% 57%,2% 35%,39% 34%)}
+.brand-symbol b{position:relative;font:18px 'Russo One';z-index:1;color:#f5a45f;text-shadow:0 1px 2px #000}
 .brand-word{font:20px 'Russo One';letter-spacing:-.5px;text-align:left}
 .brand-word>span{color:#ff8a24}
 .brand-word small{display:block;font:700 7px Montserrat;letter-spacing:1.4px;color:#929292;margin-top:4px}
@@ -17,7 +17,7 @@ button{font:inherit}
 .nav-link{width:100%;height:35px;padding:0 23px;border:0;background:transparent;color:#777;display:flex;align-items:center;gap:13px;text-align:left;font-size:12px;cursor:pointer}
 .nav-link svg{width:14px;height:14px;stroke-width:1.8}
 .nav-link:hover{color:#eee;background:#292929}
-.nav-link.selected{background:#ff8124;color:#242424;font-weight:700}
+.nav-link.selected{background:#ff7629;color:#242424;font-weight:700}
 .sidebar-spacer{flex:1}
 .login-link{height:55px;padding:0 28px;border:0;background:transparent;color:#eee;text-align:left;font-size:12px;font-weight:700;display:flex;align-items:center;gap:8px;cursor:pointer}
 .login-link svg{opacity:.55}
@@ -27,7 +27,7 @@ button{font:inherit}
 .topbar{height:48px;flex:0 0 48px;border-bottom:1px solid #303030;display:flex;align-items:center;justify-content:space-between;padding:0 16px;color:#8b8b8b;font-size:11px}
 .topbar-left{display:flex;align-items:center;gap:7px}
 .topbar-left b{color:#ddd}
-.live-indicator{width:6px;height:6px;border-radius:50%;background:#ff8124;display:inline-block}
+.live-indicator{width:6px;height:6px;border-radius:50%;background:#ff7629;display:inline-block}
 .topbar-right{height:100%;display:flex;align-items:center;gap:8px}
 .top-icon,.window-control{border:0;background:transparent;color:#777;cursor:pointer;display:grid;place-items:center}
 .top-icon svg{width:18px;height:18px}
@@ -43,8 +43,8 @@ button{font:inherit}
 .banner-subtitle{font-size:8px;letter-spacing:1.2px;color:#aaa}
 .server-online{display:flex;align-items:center;gap:7px;text-align:right;color:#aaa;font-size:9px;line-height:1.4}
 .server-online b{font-size:13px;color:#ddd}
-.online-light{width:6px;height:6px;border-radius:50%;background:#ff8124}
-.play-button{height:45px;width:173px;border:0;border-radius:0;background:#ff8124;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:background .15s}
+.online-light{width:6px;height:6px;border-radius:50%;background:#ff7629}
+.play-button{height:45px;width:173px;border:0;border-radius:0;background:#ff7629;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:background .15s}
 .play-button:hover{background:#ff963f}
 .news-section{padding:40px 0 22px;border-bottom:1px solid #363636}
 .news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
@@ -56,11 +56,11 @@ button{font:inherit}
 .news-image:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 28px,#ffffff0b 29px 30px)}
 .image-mark{position:relative;z-index:1;font:26px 'Russo One';letter-spacing:2px;color:#f2e6d5;text-shadow:0 3px 15px #000}
 .image-index{position:absolute;right:10px;bottom:7px;z-index:1;font:10px 'Russo One';color:#ffffff88}
-.news-meta{font-size:8px;color:#ff8a35;font-weight:800;letter-spacing:.7px;margin-top:9px}
+.news-meta{font-size:8px;color:#ff7629;font-weight:800;letter-spacing:.7px;margin-top:9px}
 .news-card h3{font-size:12px;font-weight:700;margin:6px 0;color:#e6e6e6}
 .news-date{font-size:8px;color:#777;display:flex;justify-content:space-between}
 .news-date span{font-size:13px;color:#777}
-.more-link{margin-top:15px;padding:0;border:0;background:none;color:#ff8124;font-size:10px;font-weight:800;letter-spacing:.5px;cursor:pointer}
+.more-link{margin-top:15px;padding:0;border:0;background:none;color:#ff7629;font-size:10px;font-weight:800;letter-spacing:.5px;cursor:pointer}
 .more-link span{font-size:19px;vertical-align:-2px;margin-left:6px}
 .watch-section{padding:20px 0 24px}
 .section-title{display:flex;align-items:center;justify-content:space-between}
@@ -68,7 +68,7 @@ button{font:inherit}
 .section-title>span{font-size:8px;letter-spacing:1.5px;color:#666}
 .watch-tabs{display:flex;gap:5px;margin:10px 0 9px}
 .watch-tabs button{height:21px;min-width:70px;border:0;background:#303030;color:#aaa;font-size:9px;cursor:pointer}
-.watch-tabs button.tab-active{background:#ff8124;color:#fff}
+.watch-tabs button.tab-active{background:#ff7629;color:#fff}
 .watch-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
 .watch-card{min-width:0;cursor:pointer}
 .watch-image{height:100px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#303030}
@@ -89,30 +89,30 @@ button{font:inherit}
 .community-strip>div b{font-size:9px;letter-spacing:.7px}
 .community-strip>div span{font-size:8px;color:#777}
 .community-strip button{height:30px;padding:0 12px;border:1px solid #484848;background:#252525;color:#bbb;display:flex;align-items:center;gap:7px;font-size:9px;cursor:pointer}
-.community-strip button:hover{border-color:#ff8124;color:#ff9a4d}
+.community-strip button:hover{border-color:#ff7629;color:#ff9a4d}
 .statusbar{height:22px;min-height:22px;margin-top:auto;border-top:1px solid #303030;background:#202020;display:flex;align-items:center;justify-content:space-between;padding:0 16px;color:#888;font-size:8px}
 .statusbar span{display:flex;align-items:center;gap:6px}
-.statusbar svg{color:#ff8124}
+.statusbar svg{color:#ff7629}
 .settings-content{width:min(900px,100%);margin:0 auto;padding:50px 45px;flex:1}
-.settings-heading>span{font-size:9px;letter-spacing:1.8px;color:#ff8124;font-weight:800}
+.settings-heading>span{font-size:9px;letter-spacing:1.8px;color:#ff7629;font-weight:800}
 .settings-heading h1{font:32px 'Russo One';margin:10px 0}
 .settings-heading p{font-size:12px;color:#888;margin-bottom:30px}
 .settings-panel{border:1px solid #383838;background:#222;padding:25px}
-.settings-title{display:flex;align-items:center;gap:12px;color:#ff8124;padding-bottom:22px;border-bottom:1px solid #393939;margin-bottom:20px}
+.settings-title{display:flex;align-items:center;gap:12px;color:#ff7629;padding-bottom:22px;border-bottom:1px solid #393939;margin-bottom:20px}
 .settings-title b,.settings-title small{display:block}
 .settings-title b{font-size:13px;color:#eee}
 .settings-title small{font-size:10px;color:#888;margin-top:4px}
 .field-label{display:block;font-size:9px;letter-spacing:1.2px;font-weight:800;color:#999;margin:20px 0 9px}
 .path-row{display:flex;gap:10px}
 .path-row input{flex:1}
-input:not([type=checkbox]),select{height:40px;background:#191919;border:1px solid #414141;padding:0 12px;color:#eee;font:11px Montserrat;outline:none;width:100%}
-input:focus,select:focus{border-color:#ff8124}
-.outline-button{height:38px;border:1px solid #ff8124;background:transparent;color:#ff9a4d;padding:0 15px;font-size:9px;font-weight:800;cursor:pointer}
+input:not([type=checkbox]),select{height:40px;background:#1d1d1d;border:1px solid #414141;padding:0 12px;color:#eee;font:11px Montserrat;outline:none;width:100%}
+input:focus,select:focus{border-color:#ff7629}
+.outline-button{height:38px;border:1px solid #ff7629;background:transparent;color:#ff9a4d;padding:0 15px;font-size:9px;font-weight:800;cursor:pointer}
 .toggle-row{display:flex;justify-content:space-between;align-items:center;margin:22px 0;padding:17px 0;border-top:1px solid #383838;border-bottom:1px solid #383838}
 .toggle-row b,.toggle-row small{display:block}
 .toggle-row b{font-size:11px}
 .toggle-row small{font-size:9px;color:#888;margin-top:5px}
-.toggle-row input{accent-color:#ff8124;width:17px;height:17px}
+.toggle-row input{accent-color:#ff7629;width:17px;height:17px}
 .settings-footer{display:flex;align-items:center;justify-content:space-between;margin-top:25px}
 .settings-footer span{font-size:9px;color:#888}
 .save-button{margin:0;width:auto;padding:0 22px;height:38px;font-size:10px}
