@@ -41,6 +41,7 @@ function createWindow() {
     minHeight: 700,
     backgroundColor: '#090b10',
     autoHideMenuBar: true,
+    frame: false,
     title: 'Blaze5RP Launcher',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -57,6 +58,8 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  ipcMain.handle('window:minimize', () => mainWindow?.minimize())
+  ipcMain.handle('window:close', () => mainWindow?.close())
   ipcMain.handle('settings:get', () => readSettings())
   ipcMain.handle('settings:save', (_event, settings: LauncherSettings) => {
     saveSettings({ ...defaults, ...settings })
