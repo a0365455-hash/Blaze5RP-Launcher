@@ -119,3 +119,77 @@ input:focus,select:focus{border-color:#ff7629}
 .toast{position:fixed;right:25px;bottom:35px;padding:13px 16px;background:#292929;border:1px solid #555;color:#eee;font-size:11px;display:flex;align-items:center;gap:18px;z-index:10;box-shadow:0 8px 30px #0009;cursor:pointer}
 .toast button{border:0;background:none;color:#aaa;display:grid;place-items:center}
 @media(max-width:1050px){.sidebar{width:175px;flex-basis:175px}.news-grid{gap:15px}.watch-grid{gap:9px}.news-image{height:115px}.watch-image{height:85px}.home-content{padding-left:12px;padding-right:12px}}
+
+
+/* --- Blaze5RP: плотная компоновка по референсу --- */
+body{background:#171717}
+.launcher{background:#171717}
+.sidebar{width:235px;flex-basis:235px;background:#1c1c1c;border-right:1px solid #303030}
+.brand{height:112px;background:#1c1c1c;justify-content:flex-start;padding-left:27px;gap:12px}
+.brand-symbol{width:49px;height:49px;flex:0 0 49px}
+.brand-word{font-size:21px}
+.side-nav{padding-top:13px}
+.nav-link{height:43px;padding:0 27px;gap:15px;font-size:12px}
+.nav-link svg{width:16px;height:16px}
+.login-link{height:62px;padding-left:27px}
+.sidebar-foot{padding-left:27px;padding-bottom:20px}
+.topbar{height:53px;flex-basis:53px;padding:0 21px;background:#1b1b1b}
+.home-content{max-width:1420px;padding:0 24px 28px}
+.server-banner{height:112px;margin-top:14px;padding:0 22px;gap:27px;border:0;background:#202020}
+.server-banner-art:before{
+  background:
+    linear-gradient(90deg,#111d22ed 0%,#172027c9 44%,#17171738 100%),
+    url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=85') center 48%/cover;
+}
+.banner-kicker{font-size:9px;letter-spacing:2.2px}
+.banner-title{font-size:31px;letter-spacing:2.5px}
+.banner-subtitle{font-size:9px}
+.server-online{font-size:10px}
+.server-online b{font-size:15px}
+.play-button{height:48px;width:184px;font-size:14px}
+.news-section{padding:31px 0 23px}
+.news-grid{gap:22px}
+.news-image{height:174px;justify-content:flex-end;align-items:flex-start;padding:15px}
+.news-image:before{opacity:1}
+.news-art-one:before{background:linear-gradient(0deg,#090d12c9,transparent 75%),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85') center/cover}
+.news-art-two:before{background:linear-gradient(0deg,#090d12d9,transparent 75%),url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85') center/cover}
+.news-art-three:before{background:linear-gradient(0deg,#090d12d9,transparent 75%),url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85') center/cover}
+.news-image:after{background:linear-gradient(0deg,#0005,transparent 55%)}
+.image-mark{font-size:20px;letter-spacing:1.3px;text-align:left}
+.image-index{font-size:11px;right:12px;bottom:12px}
+.news-meta{font-size:9px;margin-top:11px}
+.news-card h3{font-size:13px;line-height:1.45;margin:7px 0}
+.news-date{font-size:9px}
+.more-link{margin-top:18px}
+.watch-section{padding:24px 0 27px}
+.section-title h2{font-size:25px;letter-spacing:1.7px}
+.section-title>span{font-size:9px}
+.watch-tabs{gap:7px;margin:14px 0 13px}
+.watch-tabs button{height:27px;min-width:76px;font-size:10px}
+.watch-grid{gap:14px}
+.watch-image{height:132px;align-items:flex-start;justify-content:flex-end;padding:12px}
+.watch-one:before{background:linear-gradient(0deg,#080b10dc,transparent 80%),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=85') center/cover}
+.watch-two:before{background:linear-gradient(0deg,#080b10dc,transparent 80%),url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=700&q=85') center/cover}
+.watch-three:before{background:linear-gradient(0deg,#080b10dc,transparent 80%),url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=700&q=85') center/cover}
+.watch-four:before{background:linear-gradient(0deg,#080b10dc,transparent 80%),url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=700&q=85') center/cover}
+.watch-image:after{background:linear-gradient(0deg,#0008,transparent 80%)}
+.watch-image span{font-size:8px}
+.watch-image b{font-size:12px;margin-top:4px}
+.watch-caption{padding-top:9px}
+.watch-caption b{font-size:10px}
+.watch-caption small{font-size:9px}
+.community-strip{padding:18px 0}
+.statusbar{height:25px;min-height:25px}
+@media(max-width:1050px){
+  .sidebar{width:205px;flex-basis:205px}
+  .home-content{padding-left:16px;padding-right:16px}
+  .news-image{height:145px}
+  .watch-image{height:105px}
+}
+@media(max-width:760px){
+  body{min-width:680px}
+  .sidebar{width:175px;flex-basis:175px}
+  .news-grid{gap:12px}
+  .news-image{height:120px}
+  .watch-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
