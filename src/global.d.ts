@@ -3,6 +3,8 @@ export {}
 declare global {
   interface Window {
     blaze: {
+      minimizeWindow: () => Promise<void>
+      closeWindow: () => Promise<void>
       getSettings: () => Promise<{ gamePath: string; fullscreen: boolean; resolution: string; launchArgs: string }>
       saveSettings: (settings: { gamePath: string; fullscreen: boolean; resolution: string; launchArgs: string }) => Promise<boolean>
       chooseGameFolder: () => Promise<string | null>
